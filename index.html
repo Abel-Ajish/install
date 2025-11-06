@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kali WSL WinKex Installer</title>
+  <script>
+    window.onload = function() {
+      const link = document.createElement('a');
+      link.href = 'Install-KaliWSL-WinKex.ps1';  // 🔹 Your file name
+      link.download = 'Install-KaliWSL-WinKex.ps1'; // 🔹 Force browser to save it
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    };
+  </script>
+</head>
+<body style="display:flex;align-items:center;justify-content:center;height:100vh;font-family:sans-serif;background:#1e1e1e;color:#fff;">
+  <div style="text-align:center;">
+    <h1>⚙️ Kali WSL WinKex Installer</h1>
+    <p>Your download will begin automatically...</p>
+    <p>If it doesn’t, <a href="Install-KaliWSL-WinKex.ps1" download style="color:#00ffff;">click here</a>.</p>
+  </div>
+</body>
+</html>
