@@ -16,12 +16,8 @@ function Throw-IfError($Message) {
     }
 }
 
-# === Check for Administrator privileges ===
-if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole(
-    [Security.Principal.WindowsBuiltInRole] "Administrator")) {
-    Write-Host "⚠️ Please run this script as Administrator!" -ForegroundColor Red
-    exit 1
-}
+
+
 
 Write-Host "=============================================="
 Write-Host " Installing Kali Linux (WSL + GUI + VNC)"
